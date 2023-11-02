@@ -1,0 +1,8 @@
+body {
+  background-color: #e5f1ff47;
+}
+
+.custom-stepper .step.active {
+  background-color: #04d98c; /* Change this to your desired active step background color */
+  color: #fff; /* Change this to your desired text color for active step */
+}
