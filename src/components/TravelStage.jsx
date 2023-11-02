@@ -55,6 +55,7 @@ const TravelStage = ({
                 label="Accommodation Preference"
                 name="accommodationPreference"
               >
+                <option value="">Select</option>
                 <option value="space_hotel">Space Hotel</option>
                 <option value="martian_base">Martian Base</option>
               </Select>

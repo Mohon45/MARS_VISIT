@@ -75,6 +75,7 @@ const HelthStage = ({
           <Form>
             <Flex>
               <Select label="Health Declaration" name="healthDeclaration">
+                <option value="">Select</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </Select>
