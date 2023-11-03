@@ -29,14 +29,22 @@ const MarsVisitForm = () => {
     }
   };
   const stepStyleDTO = {
-    activeBgColor: "red",
-    completedBgColor: "blue",
-    inactiveBgColor: "gray",
+    activeBgColor: "#39A7FF",
+    inactiveTextColor: "black",
+    completedBgColor: "green",
+    labelFontSize: "12px",
   };
 
   return (
     <div>
-      <Stepper steps={steps} activeStep={step} stepStyleDTO={stepStyleDTO} />
+      <div>
+        <Stepper
+          steps={steps}
+          activeStep={step}
+          styleConfig={stepStyleDTO}
+          className="w-[100%] mx-auto"
+        />
+      </div>
       {step === 0 && (
         <PersonalStage
           data={formData}

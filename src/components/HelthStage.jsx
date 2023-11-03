@@ -10,7 +10,9 @@ import { toast } from "react-toastify";
 import Loader from "../pages/Shared/Loader";
 
 const Flex = ({ children }) => {
-  return <div className="grid grid-cols-2 gap-2">{children}</div>;
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">{children}</div>
+  );
 };
 
 const validationSchema = {

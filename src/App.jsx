@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div>
-      <div className="w-[70%] mx-auto my-6 bg-gradient-to-r from-[#C3F4E1]  to-[#F4E8E4] rounded-md p-5 shadow-xl">
+      <div className="w-[80%] mx-auto my-6 bg-gradient-to-r from-[#C3F4E1]  to-[#F4E8E4] rounded-md p-5 shadow-xl">
         <h1 className="text-center text-xl font-semibold">
           MARS VISIT APPLICATION FORM
         </h1>

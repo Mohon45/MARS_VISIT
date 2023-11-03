@@ -6,7 +6,9 @@ import * as Yup from "yup";
 import Input from "../pages/Shared/Input";
 
 const Flex = ({ children }) => {
-  return <div className="grid grid-cols-2 gap-2">{children}</div>;
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">{children}</div>
+  );
 };
 
 const validationSchema = {

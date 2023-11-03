@@ -7,7 +7,9 @@ import Input from "../pages/Shared/Input";
 import Select from "../pages/Shared/Select";
 
 const Flex = ({ children }) => {
-  return <div className="grid grid-cols-2 gap-2">{children}</div>;
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">{children}</div>
+  );
 };
 
 const validationSchema = {
@@ -66,11 +68,11 @@ const TravelStage = ({
               />
             </Flex>
 
-            <div className=" w-[300px] mx-auto my-8 flex justify-between">
+            <div className="md:w-[300px] mx-auto my-8 flex justify-between">
               {step !== 0 && (
                 <button
                   type="button"
-                  className="bg-[#04D98C] px-8 py-1.5 text-xl font-semibold rounded-md"
+                  className="bg-[#04D98C] md:px-8 px-4 py-1.5 md:text-xl font-semibold rounded-md"
                   onClick={() => handlePrev()}
                 >
                   Prev
@@ -78,7 +80,7 @@ const TravelStage = ({
               )}
               <button
                 type="submit"
-                className="bg-[#04D98C] px-8 py-1.5 text-xl font-semibold rounded-md"
+                className="bg-[#04D98C] md:px-8 px-4 py-1.5 md:text-xl font-semibold rounded-md"
               >
                 Next
               </button>
